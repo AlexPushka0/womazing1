@@ -516,7 +516,7 @@ function redirectToSuccessPage() {
   // Проверяем, заполнена ли форма
   if (form.checkValidity()) {
     // Если форма заполнена, перенаправляем на другую страницу
-    window.location.href = 'http://womazing9.zzz.com.ua/success.html';
+     window.location.href = 'https://alexpushka0.github.io/womazing1/success.html';
   } else {
     // Если форма не заполнена, выведите сообщение об ошибке или выполните другие действия
     alert("Пожалуйста, заполните все обязательные поля формы.");
