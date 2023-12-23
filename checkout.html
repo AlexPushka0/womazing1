@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WOMAZING</title>
+        <meta name="description" content="Только у нас качественная и недорогая одежда">
+        <meta name="keywords" content="womazing , magazin , одежда ,  вомазинг">
+        <meta property="og:title" content="womazing">
+        <meta property="og:description" content="Только у нас качественная и недорогая одежда">
+        <meta property="og:type" content="article">
+        <meta property="og:image" content="https://www.dropbox.com/s/xwlery7h9oiiy34/one%20phone.png?dl=0">
+        <meta property="og:site_name" content="womazing.by">
+        <meta name="theme-color" content="#091E31">
+        <link rel="apple-touch-icon" href="./assest/img/apple-touch-icon.svg">
+        <link rel="icon" type="image/png" href="./assest/img/favecon.svg">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+        <link
+        rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+  >
+  <link rel="stylesheet" href="./assest/css/slick.css">
+  <link rel="stylesheet" href="./assest/css/main.css">
+</head>
+<body>
+    <!--? Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative ">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="./assest/img/logo.svg" alt="logo">
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="header">
+        <div class="container">
+            <div class="nav header-sticky sticky-bar">
+                <img src="./assest/img/logo.svg" alt="logo">
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="index.html">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="shop.html">
+                                Магазин
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="info-brand.html">
+                                О бренде
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="contacts.html">
+                                Контакты
+                            </a>
+                        </li>
+                </ul>
+            </nav>
+            <div class="info">
+                <div class="info-phone">
+                    <div class="info-phone__hover">
+                        <img src="./assest/img/telephone.svg" class="info__phone-img">
+                        <div class="info-phone__overlay"></div>
+                    </div>
+                    <a href="tel:+34958235412" class="info-phone__tel">
+                        +7 (495) 823-54-12
+                    </a>
+                </div>
+                <a href="basket.html" class="info__basket"> 
+                    <img src="./assest/img/shopping-bags .svg" alt="">
+                </a>
+            </div>
+            <div class="burger-menu">
+                <h3 class="burger-menu__text">MENU</h3>
+                <ul class="burger-menu__list">
+                    <li class="menu__item">
+                        <a href="index.html">
+                            Главная
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="shop.html">
+                            Магазин
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="info-brand.html">
+                            О бренде
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="contacts.html">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="info-modal-offer">
+                <div class="info-modal__overlay"></div>
+                <form action="#" class="info-modal__form form-modal  js-form" id="form-modal">
+                    <img src="./assest/img/Close.png" alt="close" class="info-modal__exit">
+                    <h3 class="title-form ">
+                        Заказать обратный звонок
+                    </h3>
+                    <input type="text" class="info-modal__input" placeholder="Имя" name="name" required>
+                    <input type="email" class="info-modal__input" placeholder="E-mail" name="email" required>
+                    <input type="tel" class="info-modal__input" placeholder="Телефон" name="tel" required>
+                    <button type="submit" class="btn form-info-btn">Заказать звонок</button>
+                </form>
+                
+            </div>
+            <div class="for-user-offer">
+                <div class="info-modal__overlay for-user__overlay"></div>
+                <div class="message-for-user">
+                    
+                    <h3 class="message__title">
+                        Отлично! Мы скоро вам перезвоним.
+                    </h3>
+                    <button type="button" class="message-for__exit">
+                        Закрыть
+                    </button>
+                </div>
+            </div> 
+        </div> 
+    </header>
+    <section class="navigeishons">
+        <div class="container">
+         <h1 class="title title__width">Оформление заказа</h1>
+         <div class="navigeishon-blok"> 
+             <span class="navigeishon-blok__one">
+                 <a href="index.html">Главная</a>
+                </span>
+                <span class="navigeishon-blok__shop active">Оформление заказа</span>
+            </div> 
+        </div> 
+    </section>
+    <section class="checkout">
+        <div class="container">
+            <div class="checkout-wrapper">
+                <form action="#" class="checkout-form" id="big-form">
+                    <legend class="checkout-form__item">
+                        <h3 class="checkout-form__title">Данные покупателя</h3>
+                        <input type="text" class="checkout-form__input    info-modal__input" placeholder="Имя" name="name" required>
+                        <input type="email" class=" checkout-form__input  info-modal__input" placeholder="E-mail" name="email" required>
+                        <input type="tel" class=" checkout-form__input  info-modal__input" placeholder="Телефон" name="tel" required>
+                    </legend>
+                    <legend class="checkout-form__item">
+                        <h3 class="checkout-form__title">Адрес получателя</h3>
+                        <input type="text" class="checkout-form__input   info-modal__input" placeholder="Страна" name="text" required>
+                        <input type="text" class="checkout-form__input   info-modal__input" placeholder="Город" name="gorod" required>
+                        <input type="text" class="checkout-form__input   info-modal__input" placeholder="Улица" name="yliha" required>
+                        <input type="text" class="checkout-form__input   info-modal__input" placeholder="Дом" name="dom" required>
+                        <input type="text" class="checkout-form__input   info-modal__input" placeholder="Квартира" name="kvartira" required>
+                    </legend>
+                    <legend class="checkout-form__item">
+                        <h3 class="checkout-form__title">Комментарии</h3>
+                        <input type="text" class="checkout-form__input  info-modal__input info-modal__input_botton" placeholder="Введите текст" name="messages">
+                    </legend>
+                </form>
+                <div class="checkout-order">
+                    <div class="order-total">
+                        <h3 class="order-total__title">
+                            Ваш заказ
+                        </h3>
+                        <ul class="order-total__items">
+                            <li class="order-total__item">
+                                <h4 class="order-total__text">Товар</h4>
+                                <h4 class="order-total__text">Всего</h4>
+                            </li>
+                            <li class="order-total__item">
+                                <h4 class="order-total__text">Футболка USA</h4>
+                                <span class="order-total__span">$129</span>
+                            </li>
+                            <li class="order-total__item">
+                                <h4 class="order-total__text">Подытог</h4>
+                                <span class="order-total__span">$129</span>
+                            </li>
+                        <li class="order-total__item active">
+                            <h4 class="order-total__text">Итого</h4>
+                            <span class="order-total__span">$129</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div  class="payment-method">
+                        <h3 class="payment-method__title">
+                            Способы оплаты
+                        </h3>
+                        <div  class="payment-selection">
+                            <p class="payment-selection__btn"></p>
+                            <p class="payment-selection__text">Оплата наличными</p>
+                        </div>
+                        <button type="button" class="payment-selection__button" form="big-form" onclick="redirectToSuccessPage()">Разместить заказ</button>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer ">
+    <div class="container">
+        <div class="links">
+            <div class="logo-war">
+                <img src="./assest/img/logo.svg" alt="logo">
+                <div class="logo-war__text">
+                    <span class="logo-war__span">© Все права защищены</span>
+                    <a  href="#" class="logo-war__info">Политика конфиденциальности</a>
+                    <a href="#" class="logo-war__info">Публичная оферта</a>
+                </div>
+            </div>
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="index.html">
+                            Главная
+                        </a>
+                    </li>
+                    <li class="menu__item active">
+                        <a href="shop.html">
+                            Магазин
+                        </a>
+                        <div class="shop-assorti">
+                           <ul>
+                            <li class="shop-assorti__item"><a href="#properties__item">Пальто</a></li>
+                            <li class="shop-assorti__item"><a href="#properties__item">Свитшоты</a></li>
+                            <li class="shop-assorti__item"><a href="#properties__item">Кардиганы</a></li>
+                            <li class="shop-assorti__item"><a href="#properties__item"> Толстовки</a></li>
+                          </ul> 
+                        </div>
+                    </li>
+                    <li class="menu__item">
+                        <a href="info-brand.html">
+                            О бренде
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="contacts.html">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="messengers">
+              <div class="messengers-tel-mail">
+                <a href="tel:380448235412" class="messengers__tel" >
+                    +38 (044) 823-54-12
+                </a>
+                <a href="mailto:hello@womazing.com" class="messengers__mail">hello@womazing.com</a>
+            </div>  
+                <div class="messengers-life">
+                   <div class="messengers-life__icon">
+                    <!--noindex-->
+                    <a href="https://www.instagram.com/" rel="nofollow noopener noreferrer" target="_blank">
+                        <img src="./assest/img/instagram.svg" alt="instagram" >
+                    </a>
+                    <!--/noindex-->
+                  </div>
+                  <div class="messengers-life__icon">
+                   
+                    <!--noindex-->
+                    <a href="https://www.facebook.com/" rel="nofollow noopener noreferrer" target="_blank">
+                        <img src="./assest/img/facebook.svg" alt="facebook" >
+                    </a>
+                    <!--/noindex-->
+                    </div>
+                    <div class="messengers-life__icon">
+                    <!--noindex-->
+                    <a href="https://www.twitter.com/" rel="nofollow noopener noreferrer" target="_blank">
+                        <img src="./assest/img/twitter .svg" alt="twitter" >
+                    </a>
+                    <!--/noindex-->
+                    </div>
+                </div>
+                  <div class="messengers-visa">
+                    <img src="./assest/img/visa-mastercard.png" alt="visa-mastercard" class="visa-mastercard">
+                  </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="./assest/js/jquery-3.5.1.min.js"></script> 
+<script src="./assest/js/jquery.validate.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="./assest/js/slick.min.js"></script>
+<script src="./assest/js/main.js"></script>
+</body>
+</html>
